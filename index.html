@@ -6,7 +6,27 @@
 	<link href="img/2-SAOP.png" type="image/icon" rel="shortcut icon">
 	<!--외부 css-->
 	<link href="css/1SPAO.css" type="text/css" rel="stylesheet">
+	<link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet">
 
+
+	<script src="js/jquery-3.5.1.js">
+	</script>
+	<script src="js/jquery.bxslider.js">
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.slider').bxSlider({
+				auto: true,
+				pager:false
+			});
+			$('.bx-wrapper .bx-controls-direction a').click(function(){
+				$(this).addClass('active');
+			});
+			$('.bx-wrapper .bx-controls-direction a').mouseout(function(){
+				$(this).removeClass('active');
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -24,7 +44,6 @@
 				</div>
 				<nav>
 					<div class="right_area">
-
 					</div>
 					<ul>
 						<li>
@@ -101,25 +120,19 @@
 			</div>
 			<!--header_wrap-->
 		</header>
-		<section class="slide">
-			<ul>
-				<li><a href="#"></a>
-					<img src="img/!1-SAOP.png" alt="스파오국민상품">
-				</li>
-				<li><a href="#"></a>
-					<img src="img/!2-SAOP.png" alt="스파오패딩모음">
-				</li>
-				<li><a href="#"></a>
-					<img src="img/!3-SAOP.png" alt="스파오키즈모음">
-				</li>
-			</ul>
-			<!--버튼-->
-			<a href="#" class="prev">
-				<img src="img/T2-SAOP.png" alt="이전">
-			</a>
-			<a href="#" class="next">
-				<img src="img/T1-SAOP.png" alt="다음">
-			</a>
+		<section class="slide slider">
+
+			<div><a href="#"></a>
+				<img src="img/!1-SAOP.png" alt="스파오국민상품">
+			</div>
+			<div><a href="#"></a>
+				<img src="img/!2-SAOP.png" alt="스파오패딩모음">
+			</div>
+			<div><a href="#"></a>
+				<img src="img/!3-SAOP.png" alt="스파오키즈모음">
+			</div>
+
+
 		</section>
 		<section class="new">
 			<h1>cordy set</h1>
@@ -127,7 +140,7 @@
 			<ul>
 				<li><a href="#"></a>
 					<img src="img/st-1-SAOP.png" alt="여자 스포 코디">
-					<P>SPLWB12G01</P>
+					<p>SPLWB12G01</p>
 				</li>
 				<li><a href="#"></a>
 					<img src="img/st-2-SAOP.png" alt="남자 코디">
@@ -249,24 +262,23 @@
 				<iframe width="1280" height="720" src="https://www.youtube.com/embed/XFkrHY8QSp8?autoplay=1&amp;mute=1&amp;loop=1&amp;start=1&amp;playlist=XFkrHY8QSp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div>
-				<video autoplay="autoplay controls=controls">
-					<source src="movie/mv.mp4" type="video/mp4">
-				</video>
+				<video autoplay="autoplay controls=controls"></video>
+					<source src="movie/mv.mp4" type="video/mp4"></source>
 			</div>
 		</section>
 		<section class="service">
 			<!--배경 임지ㅣ 고정-->
 			<div class="fixed_bg">
-				<img src="img/G!@-SAOP.png" alt=배경?>
+				<img src="img/G!@-SAOP.png" alt="배경?">
 			</div>
 			<h1>당신이 찾던 그 티셔츠</h1>
 			<div class="service_in">
 				<div class="left_s">
-					<img src="img/G3-SAOP.png" alt=남자>
+					<img src="img/G3-SAOP.png" alt="남자">
 				</div>
 				<div class="right_s">
-					<h2>CAMPUS LONG SLEEVE TEE></h2>
-					<p>반팔 티셔츠로 출시되어 1주일만에 완판된
+					<h2>CAMPUS LONG SLEEVE TEE</h2>
+					<p>반팔 티셔츠로 출시되어 1주일만에 완판된</p>
 					<p>
 						CAMPUS LEAGUE LONG SLEEVE TEE 가
 						긴팔 티셔츠로 재탄생했습니다.<br>
